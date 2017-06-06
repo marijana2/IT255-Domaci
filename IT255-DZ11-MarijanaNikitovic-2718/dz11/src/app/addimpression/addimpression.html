@@ -1,0 +1,11 @@
+<div id="addroom" class="active">
+				<form role="form" class="addcom-form" [ngFormModel]="busForm">
+
+					<input type="text" class="input" ngControl='ocena' required autocomplete="off" placeholder="Ocenite sajt od 1 do 10"/>
+
+
+					<input type="text" class="input" ngControl='komentar' required autocomplete="off" placeholder="Ostavite vas utisak"/>
+					<button (click)="onAddCom()" class="button button-block">Submit</button>
+					<!-- button type="submit" name="submit" class="btn" -->
+				</form>
+			</div><!--.login-tab-content-->

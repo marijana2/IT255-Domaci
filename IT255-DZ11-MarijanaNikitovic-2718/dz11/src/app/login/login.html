@@ -1,0 +1,19 @@
+<div class="row">
+   <div class="box">
+      <div class="col-lg-12 text-center">
+         <form role="form" >
+            <div class="alert alert-danger" style="display: none;">
+            </div>
+            <div class="form-group">
+               <label for="username">Username</label>
+               <input [(ngModel)]="model.username" type="text" class="form-control"  ngControl='username'>
+            </div>
+            <div class="form-group">
+               <label for="pwd">Password</label>
+               <input [(ngModel)]="model.password" type="password" class="form-control" ngControl='password'>
+            </div>
+            <button (click)="onLogIn()" class="btn btn-default">Sign in</button>
+         </form>
+      </div>
+   </div>
+</div>

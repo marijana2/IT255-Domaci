@@ -1,0 +1,25 @@
+<form class="navbar-form" role="search">
+<h3>Find your bus</h3>
+    <div class="form-group2">
+        <input type="text" class="form-control" placeholder="Pretraži po broju sedista" [(ngModel)]="broj_sedista">
+    </div>
+</form>
+
+
+<form class="navbar-form" role="search">
+    <div class="form-group2">
+        <input type="text" class="form-control" placeholder="Pretraži po modelu" [(ngModel)]="naziv_model">
+    </div>
+</form>
+
+<div class="col-lg-12">
+    <br/>
+    <div class= "sobe" *ngFor="#buss of bus| SearchPipe:broj_sedista | SearchPipeKV:naziv_model" >
+        <br>
+            <strong>Model name:</strong> {{buss.naziv_model}}
+        <br>
+            <strong>Number of seats:</strong> {{buss.broj_sedista}}
+
+
+</div>
+</div>
