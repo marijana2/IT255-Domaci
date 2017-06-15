@@ -33,4 +33,14 @@ export class FindBusComponent {
             });
 
     }
+	 public removeBus(event: Event, item: Number) {
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+    headers.append('token', localStorage.getItem('token'));
+    this.http.get('http://localhost/php/deletebus.php?id='+item,{headers:headers}) .subscribe( data => {
+    event.srcElement.parentElement.parentElement.remove();
+    });
+    }
 }
+
+

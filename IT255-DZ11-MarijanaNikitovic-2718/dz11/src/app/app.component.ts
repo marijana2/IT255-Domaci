@@ -6,7 +6,7 @@ import { FindBusComponent } from './findbus/findbus.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AddImpressionComponent } from './addimpression/addimpression.component';
 import {User} from "./registration/user.model";
-
+import { UpdateBusComponent } from "./updatebus/updatebus"
 
 @Component({
     selector: 'my-app',
@@ -20,6 +20,7 @@ import {User} from "./registration/user.model";
   {path:'./register', name:'Register', component: RegistrationComponent},
   {path:'./findbus', name: 'FindBus', component: FindBusComponent},
   {path:'./addimrepssion', name: 'AddImpression', component: AddImpressionComponent},
+  {path:'./updatebus', name: 'UpdateBus', component: UpdateBusComponent}
 
 
 

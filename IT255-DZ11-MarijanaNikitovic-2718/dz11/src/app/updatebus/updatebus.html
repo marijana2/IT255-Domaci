@@ -1,0 +1,16 @@
+<form role="form" [formGroup]="updatebusForm">
+    <div class="form-group">
+        <label for="model_naziv">Country:</label>
+        <input type="text" class="form-control" formControlName='model_naziv'>
+    </div>
+    <div class="form-group">
+        <label for="broj_sedista">Name:</label>
+        <input type="text" class="form-control" formControlName='broj_sedista'>
+    </div>
+
+    <div class="form-group">
+        <label for="id">Bus id:</label>
+        <input type="number" class="form-control" formControlName='id'>
+    </div>
+    <button (click)="updateBus()" class="btn btn-default">Update bus</button>
+</form>

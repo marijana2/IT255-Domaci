@@ -19,7 +19,8 @@
             <strong>Model name:</strong> {{buss.naziv_model}}
         <br>
             <strong>Number of seats:</strong> {{buss.broj_sedista}}
-
+            <button class="btn btn-danger" (click)="removeBus($event,
+               buss.id)">Delete</button>
 
 </div>
 </div>
